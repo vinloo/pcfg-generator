@@ -1,0 +1,703 @@
+# This grammar is sorted alphabetically. The starting node is 'S'
+
+# PHRASE STRUCTURE RULES:
+
+ADJP -> ADJP PP 
+ADJP -> ADJP SBAR 
+ADJP -> CC ADJP CC ADJP 
+ADJP -> JJ IN 
+ADJP -> JJ JJ 
+ADJP -> JJ PP 
+ADJP -> JJ S 
+ADJP -> JJ SBAR 
+ADJP -> JJ 
+ADJP -> JJR PP 
+ADJP -> JJR SBAR 
+ADJP -> JJR 
+ADJP -> NN JJ 
+ADJP -> NN 
+ADJP -> NP JJ 
+ADJP -> NP JJR 
+ADJP -> RB JJ 
+ADJP -> RB RB S 
+ADJP -> RB SBAR 
+ADJP -> RB 
+ADJP -> RBR JJ PP 
+ADJP -> VBN PP 
+ADVP -> ADVP SBAR 
+ADVP -> CC 
+ADVP -> DT JJR 
+ADVP -> DT NN SBAR 
+ADVP -> IN PP 
+ADVP -> IN 
+ADVP -> JJ 
+ADVP -> PRP 
+ADVP -> RB RB 
+ADVP -> RB SBAR 
+ADVP -> RB 
+ADVP -> RBS 
+FRAG -> ADJP 
+FRAG -> NP SBAR 
+FRAG -> S 
+FRAG -> X NP 
+FRAG -> X VP 
+NP -> ADJP NN 
+NP -> ADJP NNS 
+NP -> CD JJ NN 
+NP -> CD NN 
+NP -> CD 
+NP -> DT CD 
+NP -> DT JJ CD 
+NP -> DT JJ JJ NNS 
+NP -> DT JJ NN 
+NP -> DT JJ NNS 
+NP -> DT JJ 
+NP -> DT JJS NN 
+NP -> DT NN FW FW 
+NP -> DT NN NN 
+NP -> DT NN S 
+NP -> DT NN 
+NP -> DT NNS 
+NP -> DT PRP 
+NP -> DT 
+NP -> EX 
+NP -> JJ DT NN 
+NP -> JJ NN 
+NP -> JJ NNS 
+NP -> JJ 
+NP -> JJR 
+NP -> NN CC NN 
+NP -> NN DT NN 
+NP -> NN JJ NN 
+NP -> NN NN 
+NP -> NN 
+NP -> NNS NN 
+NP -> NNS 
+NP -> NP ADJP 
+NP -> NP ADVP 
+NP -> NP CC NP 
+NP -> NP NP 
+NP -> NP PP SBAR 
+NP -> NP PP VP 
+NP -> NP PP 
+NP -> NP RRC 
+NP -> NP SBAR 
+NP -> NP UCP 
+NP -> NP VP 
+NP -> PRP 
+NP -> PRP$ JJ NN CC NN 
+NP -> PRP$ JJ NNS 
+NP -> PRP$ JJ 
+NP -> PRP$ NN NN 
+NP -> PRP$ NN S 
+NP -> PRP$ NN 
+NP -> PRP$ NNS 
+NP -> QP 
+NP -> RB DT NNS 
+NP -> RB JJ 
+NP -> RB NN CC NN 
+NP -> RB NN 
+NP -> RB 
+NP -> RBS 
+NP -> WP NN 
+NP-TMP -> DT CD NNS 
+NP-TMP -> NN 
+PP -> CC TO NP 
+PP -> IN ADJP 
+PP -> IN NP 
+PP -> IN S 
+PP -> IN SBAR 
+PP -> IN 
+PP -> RB RB IN NP 
+PP -> TO NP 
+PP -> TO SBAR 
+PRN -> CC NP 
+PRT -> IN 
+QP -> RB JJ 
+ROOT -> ADJP 
+ROOT -> FRAG 
+ROOT -> NP 
+ROOT -> S 
+ROOT -> SBAR 
+ROOT -> VP 
+RRC -> ADVP NP 
+S -> ADJP 
+S -> ADVP VP 
+S -> NP ADJP SBAR 
+S -> NP ADJP 
+S -> NP ADVP VP 
+S -> NP NP 
+S -> NP RB VP 
+S -> NP VP ADVP SBAR 
+S -> NP VP 
+S -> NP 
+S -> NP-TMP VP 
+S -> S CC S 
+S -> S VP 
+S -> SBAR NP VP 
+S -> UCP 
+S -> VP 
+SBAR -> CC S 
+SBAR -> IN S 
+SBAR -> RB IN S 
+SBAR -> S 
+SBAR -> SBAR CC SBAR 
+SBAR -> WHADVP S 
+SBAR -> WHNP S 
+SBAR -> WHPP S 
+SBAR -> X S 
+UCP -> ADJP CC ADVP 
+UCP -> ADJP CC PP 
+UCP -> ADJP CC VP 
+UCP -> FRAG CC SBAR 
+UCP -> VP CC ADJP 
+VP -> ADVP S 
+VP -> ADVP VBP PP 
+VP -> ADVP VBZ PP 
+VP -> JJ NP 
+VP -> JJ 
+VP -> MD ADVP VP 
+VP -> MD RB ADVP VP 
+VP -> MD RB VP 
+VP -> MD VP 
+VP -> PP SBAR 
+VP -> RB VBN PP 
+VP -> TO VP 
+VP -> VB ADJP PP 
+VP -> VB ADJP 
+VP -> VB ADVP NP PP 
+VP -> VB ADVP SBAR 
+VP -> VB ADVP 
+VP -> VB NP ADVP SBAR S 
+VP -> VB NP ADVP 
+VP -> VB NP PP 
+VP -> VB NP PRT ADVP 
+VP -> VB NP SBAR 
+VP -> VB NP VP 
+VP -> VB NP 
+VP -> VB PP SBAR 
+VP -> VB PP 
+VP -> VB S 
+VP -> VB SBAR 
+VP -> VB UCP 
+VP -> VB VP 
+VP -> VB 
+VP -> VBD S NP-TMP PP 
+VP -> VBD 
+VP -> VBG ADJP 
+VP -> VBG ADVP S 
+VP -> VBG NP PP 
+VP -> VBG NP SBAR 
+VP -> VBG NP 
+VP -> VBG PP 
+VP -> VBG S 
+VP -> VBG SBAR 
+VP -> VBG 
+VP -> VBN ADVP S 
+VP -> VBN ADVP 
+VP -> VBN NP SBAR 
+VP -> VBN PP 
+VP -> VBN PRT PP 
+VP -> VBN S 
+VP -> VBN SBAR 
+VP -> VBN 
+VP -> VBP ADJP S 
+VP -> VBP ADJP 
+VP -> VBP ADVP ADJP 
+VP -> VBP ADVP PP 
+VP -> VBP ADVP 
+VP -> VBP CC VBP NP 
+VP -> VBP NP FRAG 
+VP -> VBP NP PP 
+VP -> VBP NP SBAR 
+VP -> VBP NP 
+VP -> VBP PP ADJP 
+VP -> VBP PP PP 
+VP -> VBP PP SBAR 
+VP -> VBP PP 
+VP -> VBP S 
+VP -> VBP SBAR 
+VP -> VBP UCP 
+VP -> VBP VP 
+VP -> VBP 
+VP -> VBZ ADJP PRN PP 
+VP -> VBZ ADJP S SBAR 
+VP -> VBZ ADJP S 
+VP -> VBZ ADJP SBAR 
+VP -> VBZ ADJP 
+VP -> VBZ ADVP NP 
+VP -> VBZ ADVP SBAR 
+VP -> VBZ ADVP VP 
+VP -> VBZ NP PP 
+VP -> VBZ NP SBAR 
+VP -> VBZ NP 
+VP -> VBZ PP 
+VP -> VBZ RB ADJP PP 
+VP -> VBZ RB NP 
+VP -> VBZ RB S 
+VP -> VBZ RB VP 
+VP -> VBZ S 
+VP -> VBZ SBAR 
+VP -> VBZ UCP 
+VP -> VBZ VP 
+VP -> VBZ 
+VP -> VP CC VP PP 
+VP -> VP CC VP 
+WHADVP -> WRB 
+WHNP -> IN 
+WHNP -> WDT 
+WHNP -> WP NP 
+WHNP -> WP 
+WHPP -> IN WHNP 
+X -> DT ADJP 
+X -> DT JJR 
+X -> DT RBR 
+# LEXICAL RULES:
+
+CC -> 'and' 
+CC -> 'but' 
+CC -> 'neither' 
+CC -> 'nor' 
+CC -> 'or' 
+CD -> 'one' 
+CD -> 'thousand' 
+DT -> 'a' 
+DT -> 'all' 
+DT -> 'an' 
+DT -> 'any' 
+DT -> 'each' 
+DT -> 'no' 
+DT -> 'the' 
+DT -> 'this' 
+DT -> 'those' 
+EX -> 'there' 
+FW -> 'i' 
+FW -> 'wasnt' 
+IN -> 'about' 
+IN -> 'after' 
+IN -> 'against' 
+IN -> 'as' 
+IN -> 'at' 
+IN -> 'because' 
+IN -> 'by' 
+IN -> 'for' 
+IN -> 'from' 
+IN -> 'if' 
+IN -> 'in' 
+IN -> 'inside' 
+IN -> 'like' 
+IN -> 'of' 
+IN -> 'off' 
+IN -> 'on' 
+IN -> 'out' 
+IN -> 'outside' 
+IN -> 'since' 
+IN -> 'than' 
+IN -> 'that' 
+IN -> 'thats' 
+IN -> 'though' 
+IN -> 'toward' 
+IN -> 'upon' 
+IN -> 'while' 
+IN -> 'with' 
+IN -> 'without' 
+JJ -> 'able' 
+JJ -> 'absurd' 
+JJ -> 'airbuilt' 
+JJ -> 'alive' 
+JJ -> 'brief' 
+JJ -> 'burdensome' 
+JJ -> 'cant' 
+JJ -> 'comfortable' 
+JJ -> 'disgraceful' 
+JJ -> 'distressed' 
+JJ -> 'dont' 
+JJ -> 'due' 
+JJ -> 'elusive' 
+JJ -> 'emotionless' 
+JJ -> 'endurable' 
+JJ -> 'even-minded' 
+JJ -> 'everlasting' 
+JJ -> 'external' 
+JJ -> 'few' 
+JJ -> 'first' 
+JJ -> 'free' 
+JJ -> 'future' 
+JJ -> 'greedy' 
+JJ -> 'human' 
+JJ -> 'indifferent' 
+JJ -> 'insufficient' 
+JJ -> 'intolerable' 
+JJ -> 'irritated' 
+JJ -> 'little' 
+JJ -> 'lustful' 
+JJ -> 'many' 
+JJ -> 'mastery' 
+JJ -> 'miserable' 
+JJ -> 'much' 
+JJ -> 'necessary' 
+JJ -> 'outside' 
+JJ -> 'own' 
+JJ -> 'particular' 
+JJ -> 'pleasurable' 
+JJ -> 'poor' 
+JJ -> 'practical' 
+JJ -> 'present' 
+JJ -> 'public' 
+JJ -> 'pure' 
+JJ -> 'rational' 
+JJ -> 'reluctant' 
+JJ -> 'right' 
+JJ -> 'same' 
+JJ -> 'second' 
+JJ -> 'selfcontrol' 
+JJ -> 'silent' 
+JJ -> 'single' 
+JJ -> 'sorry' 
+JJ -> 'stoic' 
+JJ -> 'strict' 
+JJ -> 'such' 
+JJ -> 'tolerant' 
+JJ -> 'true' 
+JJ -> 'unaffected' 
+JJ -> 'uncomfortable' 
+JJ -> 'unconquerable' 
+JJ -> 'ungrateful' 
+JJ -> 'untroubled' 
+JJ -> 'whole' 
+JJ -> 'willing' 
+JJ -> 'wise' 
+JJ -> 'worth' 
+JJR -> 'better' 
+JJR -> 'bigger' 
+JJR -> 'less' 
+JJR -> 'longer' 
+JJR -> 'more' 
+JJR -> 'tougher' 
+JJS -> 'greatest' 
+JJS -> 'most' 
+MD -> 'can' 
+MD -> 'could' 
+MD -> 'must' 
+MD -> 'should' 
+MD -> 'will' 
+NN -> 'acceptance' 
+NN -> 'act' 
+NN -> 'adversity' 
+NN -> 'ambition' 
+NN -> 'anger' 
+NN -> 'anything' 
+NN -> 'approval' 
+NN -> 'art' 
+NN -> 'ass' 
+NN -> 'body' 
+NN -> 'bullshit' 
+NN -> 'calmness' 
+NN -> 'certainty' 
+NN -> 'chance' 
+NN -> 'change' 
+NN -> 'character' 
+NN -> 'chief' 
+NN -> 'choice' 
+NN -> 'competition' 
+NN -> 'control' 
+NN -> 'conviction' 
+NN -> 'corner' 
+NN -> 'country' 
+NN -> 'courage' 
+NN -> 'cure' 
+NN -> 'day' 
+NN -> 'defeat' 
+NN -> 'difference' 
+NN -> 'doesnt' 
+NN -> 'dont' 
+NN -> 'duty' 
+NN -> 'element' 
+NN -> 'elinor' 
+NN -> 'enemy' 
+NN -> 'estimate' 
+NN -> 'everything' 
+NN -> 'face' 
+NN -> 'fate' 
+NN -> 'fool' 
+NN -> 'frenzy' 
+NN -> 'friction' 
+NN -> 'gem' 
+NN -> 'goal' 
+NN -> 'happiness' 
+NN -> 'hatred' 
+NN -> 'heart' 
+NN -> 'hero' 
+NN -> 'home' 
+NN -> 'honour' 
+NN -> 'imagination' 
+NN -> 'indifference' 
+NN -> 'intention' 
+NN -> 'irritation' 
+NN -> 'job' 
+NN -> 'life' 
+NN -> 'look' 
+NN -> 'man' 
+NN -> 'master' 
+NN -> 'matter' 
+NN -> 'mind' 
+NN -> 'moment' 
+NN -> 'morning' 
+NN -> 'move' 
+NN -> 'movie' 
+NN -> 'nothing' 
+NN -> 'pain' 
+NN -> 'part' 
+NN -> 'peace' 
+NN -> 'person' 
+NN -> 'pleasure' 
+NN -> 'position' 
+NN -> 'power' 
+NN -> 'presence' 
+NN -> 'principle' 
+NN -> 'privilege' 
+NN -> 'prudence' 
+NN -> 'quality' 
+NN -> 'reason' 
+NN -> 'resignation' 
+NN -> 'resistance' 
+NN -> 'rule' 
+NN -> 'selfcontrol' 
+NN -> 'selfdiscipline' 
+NN -> 'selfrespect' 
+NN -> 'shade' 
+NN -> 'shipwreck' 
+NN -> 'situation' 
+NN -> 'someone' 
+NN -> 'sort' 
+NN -> 'soul' 
+NN -> 'spirit' 
+NN -> 'stoicism' 
+NN -> 'strength' 
+NN -> 'success' 
+NN -> 'temptation' 
+NN -> 'thing' 
+NN -> 'think' 
+NN -> 'thought' 
+NN -> 'time' 
+NN -> 'today' 
+NN -> 'uncertainty' 
+NN -> 'virtue' 
+NN -> 'vulnerability' 
+NN -> 'way' 
+NN -> 'willingness' 
+NN -> 'world' 
+NN -> 'youll' 
+NN -> 'youre' 
+NNS -> 'drunkards' 
+NNS -> 'ears' 
+NNS -> 'emotions' 
+NNS -> 'events' 
+NNS -> 'hopes' 
+NNS -> 'illusions' 
+NNS -> 'judgments' 
+NNS -> 'laurels' 
+NNS -> 'lies' 
+NNS -> 'lifeboats' 
+NNS -> 'limits' 
+NNS -> 'lives' 
+NNS -> 'men' 
+NNS -> 'obstacles' 
+NNS -> 'ones' 
+NNS -> 'others' 
+NNS -> 'people' 
+NNS -> 'phantoms' 
+NNS -> 'problems' 
+NNS -> 'ruins' 
+NNS -> 'tears' 
+NNS -> 'things' 
+NNS -> 'trials' 
+NNS -> 'warriors' 
+NNS -> 'weapons' 
+NNS -> 'words' 
+NNS -> 'worlds' 
+NNS -> 'years' 
+PRP -> 'he' 
+PRP -> 'himself' 
+PRP -> 'it' 
+PRP -> 'itself' 
+PRP -> 'me' 
+PRP -> 'ourselves' 
+PRP -> 'them' 
+PRP -> 'themselves' 
+PRP -> 'they' 
+PRP -> 'us' 
+PRP -> 'we' 
+PRP -> 'you' 
+PRP -> 'yourself' 
+PRP$ -> 'his' 
+PRP$ -> 'its' 
+PRP$ -> 'my' 
+PRP$ -> 'our' 
+PRP$ -> 'their' 
+PRP$ -> 'your' 
+RB -> 'always' 
+RB -> 'as' 
+RB -> 'away' 
+RB -> 'badly' 
+RB -> 'easily' 
+RB -> 'else' 
+RB -> 'even' 
+RB -> 'fast' 
+RB -> 'first' 
+RB -> 'immediately' 
+RB -> 'just' 
+RB -> 'lightly' 
+RB -> 'long' 
+RB -> 'longer' 
+RB -> 'much' 
+RB -> 'never' 
+RB -> 'no' 
+RB -> 'not' 
+RB -> 'now' 
+RB -> 'only' 
+RB -> 'otherwise' 
+RB -> 'properly' 
+RB -> 'relentlessly' 
+RB -> 'silently' 
+RB -> 'so' 
+RB -> 'sometimes' 
+RB -> 'then' 
+RB -> 'too' 
+RB -> 'up' 
+RB -> 'usually' 
+RB -> 'yet' 
+RBR -> 'more' 
+RBS -> 'most' 
+TO -> 'to' 
+VB -> 'arouse' 
+VB -> 'be' 
+VB -> 'become' 
+VB -> 'change' 
+VB -> 'die' 
+VB -> 'distract' 
+VB -> 'do' 
+VB -> 'endure' 
+VB -> 'enjoy' 
+VB -> 'fail' 
+VB -> 'fall' 
+VB -> 'feel' 
+VB -> 'find' 
+VB -> 'forget' 
+VB -> 'grieve' 
+VB -> 'harm' 
+VB -> 'hold' 
+VB -> 'keep' 
+VB -> 'know' 
+VB -> 'last' 
+VB -> 'learn' 
+VB -> 'let' 
+VB -> 'live' 
+VB -> 'look' 
+VB -> 'love' 
+VB -> 'make' 
+VB -> 'matter' 
+VB -> 'meet' 
+VB -> 'need' 
+VB -> 'overlook' 
+VB -> 'overreact' 
+VB -> 'prune' 
+VB -> 'react' 
+VB -> 'remain' 
+VB -> 'resist' 
+VB -> 'revoke' 
+VB -> 'ruin' 
+VB -> 'say' 
+VB -> 'see' 
+VB -> 'sing' 
+VB -> 'stop' 
+VB -> 'suffer' 
+VB -> 'tell' 
+VB -> 'think' 
+VB -> 'try' 
+VB -> 'wait' 
+VB -> 'work' 
+VBD -> 'began' 
+VBD -> 'isnt' 
+VBG -> 'being' 
+VBG -> 'choosing' 
+VBG -> 'complaining' 
+VBG -> 'conquering' 
+VBG -> 'cultivating' 
+VBG -> 'doing' 
+VBG -> 'exposing' 
+VBG -> 'getting' 
+VBG -> 'going' 
+VBG -> 'griping' 
+VBG -> 'hurting' 
+VBG -> 'knowing' 
+VBG -> 'shedding' 
+VBN -> 'based' 
+VBN -> 'been' 
+VBN -> 'born' 
+VBN -> 'challenged' 
+VBN -> 'cured' 
+VBN -> 'disappointed' 
+VBN -> 'dragged' 
+VBN -> 'excited' 
+VBN -> 'forced' 
+VBN -> 'grounded' 
+VBN -> 'heard' 
+VBN -> 'led' 
+VBN -> 'mastered' 
+VBN -> 'perfected' 
+VBN -> 'polished' 
+VBN -> 'satisfied' 
+VBN -> 'supposed' 
+VBN -> 'taken' 
+VBP -> 'add' 
+VBP -> 'allow' 
+VBP -> 'are' 
+VBP -> 'arise' 
+VBP -> 'arm' 
+VBP -> 'arrive' 
+VBP -> 'bear' 
+VBP -> 'believe' 
+VBP -> 'change' 
+VBP -> 'complain' 
+VBP -> 'determine' 
+VBP -> 'disturb' 
+VBP -> 'dont' 
+VBP -> 'exist' 
+VBP -> 'fade' 
+VBP -> 'fear' 
+VBP -> 'have' 
+VBP -> 'live' 
+VBP -> 'lose' 
+VBP -> 'make' 
+VBP -> 'matter' 
+VBP -> 'need' 
+VBP -> 'possess' 
+VBP -> 'react' 
+VBP -> 'savor' 
+VBP -> 'seek' 
+VBP -> 'shouldnt' 
+VBP -> 'speak' 
+VBP -> 'think' 
+VBP -> 'value' 
+VBP -> 'wait' 
+VBP -> 'wither' 
+VBZ -> 'conquers' 
+VBZ -> 'decides' 
+VBZ -> 'does' 
+VBZ -> 'hankers' 
+VBZ -> 'has' 
+VBZ -> 'is' 
+VBZ -> 'makes' 
+VBZ -> 'melts' 
+VBZ -> 'passes' 
+VBZ -> 'rejoices' 
+VBZ -> 'seems' 
+WDT -> 'that' 
+WDT -> 'what' 
+WDT -> 'which' 
+WP -> 'what' 
+WP -> 'who' 
+WRB -> 'how' 
+WRB -> 'when' 
+WRB -> 'where' 
